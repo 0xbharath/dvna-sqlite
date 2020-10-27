@@ -7,7 +7,8 @@ var env = process.env.NODE_ENV || "development";
 
 var sequelize = new Sequelize({
   dialect: 'sqlite',
-  storage: 'db.sqlite'
+  storage: 'db.sqlite',
+  operatorsAliases: false
 });
 
 sequelize
